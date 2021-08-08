@@ -93,4 +93,15 @@ In general, for those kind of tools : The sooner the better.
 
 Doc : [here](https://nextjs.org/docs/basic-features/typescript)
 
+
+**test n°6** : check if the app still runs as usual :
+- client : OK
+- server : OK ( untouched)
+
 #### Server :
+
+Doc : [here](https://medium.com/@th.guibert/basic-apollo-express-graphql-api-with-typescript-2ee021dea2c)
+
+**test n°6** : check if the app still runs as usual :
+- client : OK ( untouched)
+- server : OK
