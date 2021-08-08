@@ -4,7 +4,8 @@
 using Next.js &amp; Apollo GraphQL.
 - [x] We would like you to update Next.js, React, Apollo GraphQL to the latest versions.
 - [ ] Refactor the code as deemed fit. Brownie points if you use some of the latest
-features of react like Hooks, Suspense Lazy etc. More brownie points if you use
+features of react like Hooks, Suspense Lazy etc. 
+- [x] More brownie points if you use
 TypeScript.
 - [ ] Create a GraphQL Query and Resolver that will generate a dummy list of about 2000
 names with their addresses, email and phone numbers. Feel free to use any fake

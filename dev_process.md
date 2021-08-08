@@ -165,3 +165,38 @@ urls for project :
 
 Doc: 
 - https://adampaxton.com/how-to-deploy-to-multiple-heroku-apps-from-the-same-git-repository/
+
+### Card feature
+
+Since the features i need to develop will not infer with the complexity of the deployment / dockerization process, I can start adding the Card feature in order to make some progress.
+
+To achieve the full feature, we need to fetch data, and also handle pagination ( infinite scroll, load more).
+
+I will **first implement data fetching** ( Part 1), **then adapt the code** to handle the previously described cases ( Part 2)
+
+#### Part 1
+Steps :
+
+server :
+1) create a function which returns an array of 2000 items 
+2) create a resolver
+3) create a typeDefs
+4) get the resolver to return the list from 1)
+
+Interface
+1) Create a new page
+2) Create a link to access the page
+3) create a query to get the list
+4) display the list 
+    
+Comments :
+While doing part 1, I've checked the npm package suggested ( casual ), and the one which was already installed ( faker).
+
+Since the faker doc & types can do the job, I'll stick with the faker package for now.
+If those packages were to be part of the product for a real feature, it would be a good point to compare the size/features of the 2 packages, in order to make a choice based on optimization.
+
+**Why use getStaticProps ?**
+Since it is not specified if the list should be public or private data, I chose the most efficient method to get data.
+getStaticProps will compile data at build time, allow content to be served much faster.
+
+#### Part 2 : 
