@@ -1,16 +1,14 @@
-import { graphql } from 'react-apollo'
-import gql from 'graphql-tag'
-
-const Component = ({ data }) => (
+const mockData = {
+  loading:false,
+  name: 'Mock Name'
+}
+// TODO : remove mockData when apollo configuration is done.
+const Name = ({ data = mockData }) => (
   <span>
     {data.loading? '..' : data.name}
   </span>
 )
 
-const query = gql`
-  query name {
-    name
-  }
-`
+// TODO : add a query to fetch the name
 
-export default graphql(query)(Component)
+export default Name

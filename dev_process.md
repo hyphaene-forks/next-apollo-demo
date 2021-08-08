@@ -41,3 +41,21 @@ npm install react@latest react-dom@latest
 => OK
 
 #### GrapqhQL
+
+Context : 
+1) the apollo version is **very outdated**, and since Next when from **4. to 11. major version**, we can expect the local structure not being adapted/compliant/compatible to the new packages APIs.
+2) the original repo has **graphql declared as deps in the client folder**, and only uses a Query as GraqhQL feature.
+So the query will be a good test to see if the upgrade is OK.
+
+
+Decision : I can safely remove the current packages and follow the [official Apollo documentation](https://www.apollographql.com/blog/apollo-client/next-js/next-js-getting-started/).
+I will temporarily mock the Name component ( which uses the query ), then make it work with the updated packages.
+
+```
+npm remove next-apollo apollo-client apollo-link-http graphql react-apollo
+``` 
+
+Observation: 
+- After the packages being removed, I noticed the files where imports were declared as using those libs were not in error.
+Conclusion: 
+- it would be nice to add a linter, and a formatter, as best practices.

@@ -22,3 +22,7 @@ click a ‘Load More’ button, which you would need to create.
 app locally using docker-compose.
 - [ ] Deploy your App on Heroku. And send us a link to the app.
 - [ ] Write cypress end to end test for the page you created.
+
+
+## Personnal, good to have :
+- [ ] linter / formatter ( eslint / prettier being a good default choice)
