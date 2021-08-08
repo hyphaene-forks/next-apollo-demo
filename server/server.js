@@ -1,24 +1,12 @@
 const express = require('express');
-const { ApolloServer, gql } = require('apollo-server-express');
+const { ApolloServer } = require('apollo-server-express');
 const { BACKEND_PORT, BACKEND_URL } = require('./constants');
-const { generateName } = require('./utils/nameGenerator');
+const { typeDefs } = require('./apollo/typeDefs');
+const { resolvers } = require('./apollo/resolvers');
+
+const server = new ApolloServer({ typeDefs, resolvers });
 
 async function startApolloServer() {
-	// Construct a schema, using GraphQL schema language
-	const typeDefs = gql`
-		type Query {
-			name: String
-		}
-	`;
-
-	// Provide resolver functions for your schema fields
-	const resolvers = {
-		Query: {
-			name: () => generateName(),
-		},
-	};
-
-	const server = new ApolloServer({ typeDefs, resolvers });
 	await server.start();
 
 	const app = express();
