@@ -1,13 +1,34 @@
-import Link from 'next/link'
-import Name from '../components/Name'
+import Link from 'next/link';
+import { gql } from '@apollo/client';
 
-const Page = () => (
-  <div>
-    Welcome, <Name />
-    <br/><br/>
-    <Link href="/about"><a>About</a></Link>
+import Name from '../components/Name';
+import client from '../apollo-client';
 
-  </div>
-)
+export async function getStaticProps() {
+	const data = await client.query({
+		query: gql`
+			query name {
+				name
+			}
+		`,
+	});
 
-export default Page
+	return {
+		props: { nameData: data },
+	};
+}
+
+const Home = ({ nameData }) => {
+	return (
+		<div>
+			Welcome, <Name data={nameData} />
+			<br />
+			<br />
+			<Link href="/about">
+				<a>About</a>
+			</Link>
+		</div>
+	);
+};
+
+export default Home;

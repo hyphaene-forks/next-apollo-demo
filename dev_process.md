@@ -59,3 +59,5 @@ Observation:
 - After the packages being removed, I noticed the files where imports were declared as using those libs were not in error.
 Conclusion: 
 - it would be nice to add a linter, and a formatter, as best practices.
+
+**Test n°3** : does the home page shows a generated firstName ? OK
