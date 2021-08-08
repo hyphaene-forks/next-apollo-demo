@@ -48,7 +48,7 @@ Context :
 So the query will be a good test to see if the upgrade is OK.
 
 
-Decision : I can safely remove the current packages and follow the [official Apollo documentation](https://www.apollographql.com/blog/apollo-client/next-js/next-js-getting-started/).
+**Decision** : I can safely remove the current packages and follow the [official Apollo documentation](https://www.apollographql.com/blog/apollo-client/next-js/next-js-getting-started/).
 I will temporarily mock the Name component ( which uses the query ), then make it work with the updated packages.
 
 ```
@@ -76,7 +76,7 @@ Since I have only one query endpoint to expose, I will use official documentatio
 
 **test n°4** : Does the server expose the same API than before ? OK
 
-## what next 
+## what next
 
 ### TS
 
