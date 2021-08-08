@@ -18,7 +18,7 @@ export async function getStaticProps() {
 	};
 }
 
-const Home = ({ nameData }) => {
+export default function Home({ nameData }): JSX.Element {
 	return (
 		<div>
 			Welcome, <Name data={nameData} />
@@ -29,6 +29,4 @@ const Home = ({ nameData }) => {
 			</Link>
 		</div>
 	);
-};
-
-export default Home;
+}

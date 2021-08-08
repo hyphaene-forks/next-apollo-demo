@@ -75,3 +75,22 @@ Decision :
 Since I have only one query endpoint to expose, I will use official documentation to implement the graphql server.  
 
 **test n°4** : Does the server expose the same API than before ? OK
+
+## what next 
+
+### TS
+
+Now, there are features to implement, TypeScript is an optionnal tool to add.
+since I'm a TS user, my next move is to add it to both client and server.
+
+I will focus on TS for multiple reasons : 
+- to avoid later refactoring on code i'll write from now, 
+- to get rid of module.exports + require use on the server,
+
+In general, for those kind of tools : The sooner the better.
+
+#### Client :
+
+Doc : [here](https://nextjs.org/docs/basic-features/typescript)
+
+#### Server :
