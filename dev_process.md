@@ -105,3 +105,15 @@ Doc : [here](https://medium.com/@th.guibert/basic-apollo-express-graphql-api-wit
 **test n°6** : check if the app still runs as usual :
 - client : OK ( untouched)
 - server : OK
+
+## Implement test tools
+
+Now the stack need to welcome the tests toolboxes, so we can code while testing in the meantime.
+
+Doc :
+- https://frontend-digest.com/setting-up-testing-library-with-nextjs-a9702cbde32d
+- https://dev.to/maciekgrzybek/setup-next-js-with-typescript-jest-and-react-testing-library-28g5
+
+1) implement JEST + testing library on client
+2) implement JEST on server side
+3) implement cypress on the client 
