@@ -113,6 +113,7 @@ Now the stack need to welcome the tests toolboxes, so we can code while testing 
 Doc :
 - https://frontend-digest.com/setting-up-testing-library-with-nextjs-a9702cbde32d
 - https://dev.to/maciekgrzybek/setup-next-js-with-typescript-jest-and-react-testing-library-28g5
+- https://imranhsayed.medium.com/using-cypress-with-next-js-for-end-to-end-testing-cypress-nextjs-example-af100609cf16
 
 1) implement JEST + testing library on client
 **test n°6** : add a working test OK
@@ -121,4 +122,4 @@ Doc :
 **test n°7** :  add a working test OK
 
 3) implement cypress on the client 
-**test n°8** :  add a working test 
+**test n°8** :  add a working test OK

@@ -26,8 +26,8 @@ export default function Home({ nameData }): JSX.Element {
 			Welcome, <Name data={nameData} />
 			<br />
 			<br />
-			<Link href="/about">
-				<a>About</a>
+			<Link href="/about" data-cy="nav-item">
+				<a data-cy="nav-item">About</a>
 			</Link>
 		</div>
 	);
