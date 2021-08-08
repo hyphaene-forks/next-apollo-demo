@@ -21,3 +21,8 @@ While making this test and the installation, I've added some early documentation
 When installing and running the frontend, I noticed files from client/.next were watched by git.
 The project already contains a gitignore, but I have deleted the main gitignore in order to create a specific file in each folder.
 
+- Removing .next from git history by running the following command from the client folder
+```
+git rm -r --cached .next
+```
+
