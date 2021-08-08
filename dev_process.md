@@ -26,3 +26,18 @@ The project already contains a gitignore, but I have deleted the main gitignore 
 git rm -r --cached .next
 ```
 
+## Upgrade 
+### Client 
+
+#### Next && React
+
+From [this doc](https://nextjs.org/docs/upgrading)
+
+```
+npm install react@latest react-dom@latest
+```
+
+**Test n°2** : does the project still runs ?
+=> OK
+
+#### GrapqhQL
