@@ -1,6 +1,6 @@
 # Test requirements :
 
-- [ ] Fork the repo: https://github.com/arunoda/next-apollo-demo This is a basic app
+- [x] Fork the repo: https://github.com/arunoda/next-apollo-demo This is a basic app
 using Next.js &amp; Apollo GraphQL.
 - [ ] We would like you to update Next.js, React, Apollo GraphQL to the latest versions.
 - [ ] Refactor the code as deemed fit. Brownie points if you use some of the latest
