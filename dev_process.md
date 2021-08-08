@@ -115,5 +115,10 @@ Doc :
 - https://dev.to/maciekgrzybek/setup-next-js-with-typescript-jest-and-react-testing-library-28g5
 
 1) implement JEST + testing library on client
+**test n°6** : add a working test OK
+
 2) implement JEST on server side
+**test n°7** :  add a working test OK
+
 3) implement cypress on the client 
+**test n°8** :  add a working test 
