@@ -61,3 +61,17 @@ Conclusion:
 - it would be nice to add a linter, and a formatter, as best practices.
 
 **Test n°3** : does the home page shows a generated firstName ? OK
+
+
+### Server 
+
+#### graphql
+
+Context:
+The server uses an old version of apollo-server-express.
+It also exposes only one resolver, supporting one query.
+
+Decision : 
+Since I have only one query endpoint to expose, I will use official documentation to implement the graphql server.  
+
+**test n°4** : Does the server expose the same API than before ? OK
