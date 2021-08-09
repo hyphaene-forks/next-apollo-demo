@@ -2,10 +2,16 @@
 	"name": "faker-graphql",
 	"version": "1.0.0",
 	"license": "MIT",
+	"main": "build/index.js",
 	"scripts": {
 		"start:dev": "npm run build:dev",
 		"build:dev": "nodemon './server.ts' --exec 'ts-node' ./server.ts -e ts,graphql",
-		"test": "jest"
+		"test": "jest",
+		"build": "tsc",
+		"start": "node ./build/index.js",
+		"docker:build": "docker build . -t my-graphql-server",
+		"docker:build:no-cache": "docker build . --no-cache -t my-graphql-server",
+		"docker:run": "docker run  -p 5000:5000 my-graphql-server"
 	},
 	"dependencies": {
 		"apollo-server-express": "^3.1.2",

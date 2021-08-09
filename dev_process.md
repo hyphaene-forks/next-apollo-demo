@@ -123,3 +123,37 @@ Doc :
 
 3) implement cypress on the client 
 **test n°8** :  add a working test OK
+
+
+## Dockerize the app
+
+For this step, I will provide two images for both servers, a docker-compose file, instructions and a script to run / configure the project. 
+
+The original idea was to get a base image ready for production, but I will start with a simple / working image, since the instructions from the official doc lead to an error on my machine.
+
+Docs :
+
+Client :
+- https://nextjs.org/docs/deployment TRIED
+- https://github.com/vercel/next.js/issues/121#issuecomment-624855104 OK
+
+
+Server:
+- https://itnext.io/lets-dockerize-a-nodejs-express-api-22700b4105e4
+- https://stackoverflow.com/questions/64245723/how-to-use-host-network-config-using-docker-compose ( for network_mode )
+
+The goal here was to achieve the requirement of having a docker compose being able to boot the app.
+Disclaimer : The network_mode feature seems to be Linux only. I would adapt the file if other machines were to be targeted to run the app.
+
+**test n°9**: can I run a docker image of the client and access to its content on localhost:3000 OK
+**test n°10** can I run a docker image of the server and access to its content on localhost:5000 OK
+**test n°11** can I run the app through the docker compose file and :
+- have access to interface : OK
+- have access to server : OK
+- client can fetch data from server: OK
+
+Observation :
+- other than prod optimization, I could also set some volumes in order to work with the container while changing files from the host.
+- this quick setup allows me to fullfill the docker requirement so I can focus on other requirements.
+=> Requirements first, bonus after.
+

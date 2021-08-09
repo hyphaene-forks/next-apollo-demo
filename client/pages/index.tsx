@@ -5,7 +5,7 @@ import Name from '../components/Name';
 import client from '../apollo-client';
 import { homeHeader } from '../constants';
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
 	const data = await client.query({
 		query: gql`
 			query name {

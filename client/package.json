@@ -4,9 +4,14 @@
 	"main": "index.js",
 	"scripts": {
 		"dev": "next",
+		"build": "next build",
+		"start": "next start",
 		"test": "jest",
 		"cypress:open": "cypress open",
-		"cypress:run": "cypress run"
+		"cypress:run": "cypress run",
+		"docker:build": "docker build . -t my-next-js-app",
+		"docker:build:no-cache": "docker build . --no-cache -t my-next-js-app",
+		"docker:run": "docker run  -p 3000:3000 my-next-js-app"
 	},
 	"license": "MIT",
 	"dependencies": {
