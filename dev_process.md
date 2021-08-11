@@ -162,3 +162,6 @@ Observation :
 urls for project : 
 - https://test-client-2021.herokuapp.com/ 
 - https://test-api-2021.herokuapp.com/
+
+Doc: 
+- https://adampaxton.com/how-to-deploy-to-multiple-heroku-apps-from-the-same-git-repository/
