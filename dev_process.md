@@ -200,3 +200,11 @@ Since it is not specified if the list should be public or private data, I chose 
 getStaticProps will compile data at build time, allow content to be served much faster.
 
 #### Part 2 : 
+
+
+Where I stopped :
+
+- i tried to use the fetchMore method exposed by useQuery hook, but I get errors directly from the packages.
+I've read many articles which point out that many Apollo features are not working since Nextjs 9.4 +
+I assume it is possible, either by having a heavier apollo configuration, or playing with all packages versions to find a match, but I have already spent more than 2 hours trying to figure this out, and I think that's already a good point for a test.
+

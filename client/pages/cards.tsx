@@ -1,45 +1,26 @@
-import { gql } from '@apollo/client';
 import client from '../apollo-client';
 import Card from '../components/Card';
-
-const CARDS_QUERY = gql`
-	query CardsContent {
-		cards {
-			id
-			name
-			image
-			imageUrl
-			avatar
-			address {
-				city
-				zipCode
-				street
-			}
-			phoneNumber
-			email
-		}
-	}
-`;
+import { CARDS_QUERY } from '../components/cards/constants';
 
 export async function getStaticProps() {
 	const data = await client.query({
+		notifyOnNetworkStatusChange: true,
 		query: CARDS_QUERY,
 		variables: {
 			offset: 0,
 			limit: 10,
 		},
 	});
-
 	return {
 		props: { cardsContent: data },
 	};
 }
 
-export default function CardsList({ cardsContent }) {
+function CardsList({ cardsContent }) {
 	if (cardsContent.loading) {
 		return <div>Loading</div>;
 	}
-	console.log(cardsContent.data.cards[0]);
+
 	return (
 		<div className="page-container">
 			<h1>Cards</h1>
@@ -57,9 +38,13 @@ export default function CardsList({ cardsContent }) {
 				))}
 			</div>
 
-			<button className="loadMore" type="button">
+			{/* <button className="loadMore" type="button" onClick={onLoadMore}>
 				Load More
-			</button>
+			</button> */}
 		</div>
 	);
+}
+
+export default function Cards({ cardsContent }) {
+	return <CardsList cardsContent={cardsContent} />;
 }

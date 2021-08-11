@@ -19,7 +19,7 @@ export const typeDefs = gql`
 	}
 	type Query {
 		name: String
-		cards: [CardContent]
+		cards(offset: Int, limit: Int): [CardContent]
 		cardsPoc: [Int]
 	}
 `;
