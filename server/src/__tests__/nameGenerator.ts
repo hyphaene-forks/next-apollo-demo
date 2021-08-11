@@ -1,4 +1,4 @@
-import { generateName } from '../utils/nameGenerator';
+import { generateName } from '../utils/generateName';
 
 describe('nameGenerator', () => {
 	it('should generate a string', () => {

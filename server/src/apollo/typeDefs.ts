@@ -14,6 +14,8 @@ export const typeDefs = gql`
 		phoneNumber: String
 		address: Address
 		image: String
+		avatar: String
+		imageUrl: String
 	}
 	type Query {
 		name: String

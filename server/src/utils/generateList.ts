@@ -12,6 +12,8 @@ type ListItem = {
 	phoneNumber: string;
 	email: string;
 	image: string;
+	avatar: string;
+	imageUrl: string;
 };
 
 type IdListItem = ListItem & { id: number };
@@ -26,7 +28,9 @@ export function generateListItem(): ListItem {
 	};
 
 	const phoneNumber = faker.phone.phoneNumber();
-	const image = faker.image.avatar();
+	const image = faker.image.image();
+	const avatar = faker.image.avatar();
+	const imageUrl = faker.image.imageUrl();
 	const email = faker.internet.email();
 
 	return {
@@ -34,6 +38,8 @@ export function generateListItem(): ListItem {
 		address,
 		phoneNumber,
 		image,
+		avatar,
+		imageUrl,
 		email,
 	};
 }
