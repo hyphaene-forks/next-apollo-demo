@@ -208,3 +208,8 @@ Where I stopped :
 I've read many articles which point out that many Apollo features are not working since Nextjs 9.4 +
 I assume it is possible, either by having a heavier apollo configuration, or playing with all packages versions to find a match, but I have already spent more than 2 hours trying to figure this out, and I think that's already a good point for a test.
 
+I wanted to do the search feature after the pagination, in order to leverage the pagination on the result of the search too.
+
+
+About the hooks, and the suspense : 
+- I did not have to use any of it for the current state of the app, since I consume data with getStaticProps.

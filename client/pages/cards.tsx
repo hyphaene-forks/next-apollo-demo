@@ -24,6 +24,13 @@ function CardsList({ cardsContent }) {
 	return (
 		<div className="page-container">
 			<h1>Cards</h1>
+			<p>
+				I've detailed the though process in the
+				<a href="https://github.com/hyphaene-forks/next-apollo-demo/blob/master/dev_process.md">
+					dev_process.md document
+				</a>
+				, feel free to take a look !
+			</p>
 
 			<div className="cards-container">
 				{cardsContent.data.cards.map((card) => (

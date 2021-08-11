@@ -34,6 +34,13 @@ export default function Home({ nameData }): JSX.Element {
 			<Link href="/cards">
 				<a>Cards</a>
 			</Link>
+			<p>
+				I've detailed the though process in the
+				<a href="https://github.com/hyphaene-forks/next-apollo-demo/blob/master/dev_process.md">
+					dev_process.md document
+				</a>
+				, feel free to take a look !
+			</p>
 		</div>
 	);
 }

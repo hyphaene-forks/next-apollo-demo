@@ -7,10 +7,10 @@ using Next.js &amp; Apollo GraphQL.
 features of react like Hooks, Suspense Lazy etc. 
 - [x] More brownie points if you use
 TypeScript.
-- [ ] Create a GraphQL Query and Resolver that will generate a dummy list of about 2000
+- [x] Create a GraphQL Query and Resolver that will generate a dummy list of about 2000
 names with their addresses, email and phone numbers. Feel free to use any fake
 data generator library, btw love https://www.npmjs.com/package/casual
-- [ ] Create a New Page in Nextjs where you display these names and addresses as a grid
+- [x] Create a New Page in Nextjs where you display these names and addresses as a grid
 of card tiles. The page needs to be responsive.
 - [ ] Add a type ahead search that allows me the search/ filter the list by typing the first
 3-4 characters of a name.
@@ -22,6 +22,7 @@ click a ‘Load More’ button, which you would need to create.
 - [x] Dockerize the server and client app and use docker-compose so that we can run the
 app locally using docker-compose.
 - [x] Deploy your App on Heroku. And send us a link to the app.
+- [x] Install cypress and create a working test.
 - [ ] Write cypress end to end test for the page you created.
 
 
