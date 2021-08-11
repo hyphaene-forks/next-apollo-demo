@@ -17,10 +17,10 @@ of card tiles. The page needs to be responsive.
 Clickjacking etc.
 - [ ] Implement Lazyloading / Infinite scrolls so that you load 20 cards each time you
 click a ‘Load More’ button, which you would need to create.
-- [ ] Add Unit Tests using Jest and React Testing Library.
-- [ ] Dockerize the server and client app and use docker-compose so that we can run the
+- [x] Add Unit Tests using Jest and React Testing Library.
+- [x] Dockerize the server and client app and use docker-compose so that we can run the
 app locally using docker-compose.
-- [ ] Deploy your App on Heroku. And send us a link to the app.
+- [x] Deploy your App on Heroku. And send us a link to the app.
 - [ ] Write cypress end to end test for the page you created.
 
 
