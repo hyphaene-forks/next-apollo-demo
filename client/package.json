@@ -7,7 +7,6 @@
 		"build": "next build",
 		"start": "next start -p $PORT",
 		"test": "jest",
-		"publish:heroku": "cd ../ && git subtree push --prefix client heroku-client master && cd client",
 		"cypress:open": "cypress open",
 		"cypress:run": "cypress run",
 		"docker:build": "docker build . -t my-next-js-app",

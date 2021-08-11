@@ -9,7 +9,6 @@
 		"test": "jest",
 		"build": "tsc",
 		"start": "node ./build/index.js",
-		"publish:heroku": "git subtree push --prefix server heroku-api master",
 		"docker:build": "docker build . -t my-graphql-server",
 		"docker:build:no-cache": "docker build . --no-cache -t my-graphql-server",
 		"docker:run": "docker run  -p 5000:5000 my-graphql-server"
