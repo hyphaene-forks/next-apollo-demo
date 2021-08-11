@@ -157,3 +157,8 @@ Observation :
 - this quick setup allows me to fullfill the docker requirement so I can focus on other requirements.
 => Requirements first, bonus after.
 
+## Heroku
+
+urls for project : 
+- https://test-client-2021.herokuapp.com/ 
+- https://test-api-2021.herokuapp.com/
